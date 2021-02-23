@@ -20,13 +20,13 @@ Many communities, games and apps need to own their economies in order to provide
 ## Core Architecture
 Our architecture builds upon [Substrate](https://substrate.dev/), a modular framework that enables the creation of purpose-built blockchains by composing custom or pre-built components. Substrate leverages strongly-typed systems for modeling the application domain.
  
-The private chain needs only to serve the community, thus, there is no need for gas, or network fees. Difference governance models can incentivize proper resource utilizations. Consensus is based on [Proof of Authority](https://academy.binance.com/en/articles/proof-of-authority-explained).
+The private chain needs only to serve the community, thus, there is no need for gas, or network fees. Different governance models can incentivize proper resource utilizations. Consensus is based on [Proof of Authority](https://academy.binance.com/en/articles/proof-of-authority-explained).
 
 ## Asset Types
 - Fungible assets
 - Non-fungible assets
 - Proof of ownership assets (certificates, permissions, memberships)
-- Live assets - mutating assets that react to triggers and/or change over time (melt, evaporate, die, combine)
+- Live assets - mutating assets that react to triggers and/or change over time (melt, evaporate, die, combine, vest)
 - Bundle - an algebraic asset, a structured asset that’s formed by composing other assets.
  
 Simple tokens are insufficient for modeling the economy.
@@ -44,7 +44,7 @@ This sophisticated exchange system can model:
 - and many, many more
  
 ## Simulation
-Unlike many other blockchain technologies, our stack is constantly simulating the economy, triggering spatial, timed and flow events. Not only is it bot-friendly, but automation is encouraged. Ideal for research, persistent games, automated market makers (AMMs), etc. The end goal is to optimize for a continuos, interactive and provably fair economics simulation.
+Unlike many other blockchain technologies, our stack is constantly simulating the economy, triggering spatial, timed and flow events. Not only is it bot-friendly, but automation is encouraged. Ideal for research, persistent games, automated market makers (AMMs), etc. The end goal is to optimize for a continuous, interactive and provably fair economics simulation.
  
 ## Liquidity
 The main liquidity outlet is an [Ethereum Bridge](https://github.com/Snowfork/polkadot-ethereum). A light Ethereum client embedded in our custom blockchain to bridge with MainNet. Users can lock their assets on Ethereum using smart contracts and bridge liquidity to our private economy. It does not involve any third parties, and assets are locked by the chain. Hence, trustless.
