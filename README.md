@@ -26,7 +26,8 @@ The private chain needs only to serve the community, thus, there is no need for 
 - Fungible assets
 - Non-fungible assets
 - Proof of ownership assets (certificates, permissions, memberships)
-- Live assets - mutating assets that react to triggers and/or change over time (melt, evaporate, die, combine, vest)
+- Live assets - mutable assets that react to triggers and/or change over time (melt, evaporate, die, combine, vest)
+- Vault assets - used to secure and hide asset bundles (surprise gifts, escrow, secrets, raffles, gacha mechanics)
 - Bundle - an algebraic asset, a structured asset that’s formed by composing other assets.
  
 Simple tokens are insufficient for modeling the economy.
